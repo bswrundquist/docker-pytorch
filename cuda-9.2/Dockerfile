@@ -43,7 +43,7 @@ ENV PATH=$CONDA_PREFIX/bin:$PATH
 # CUDA 9.2-specific steps
 RUN conda install -y -c pytorch \
     cuda92=1.0 \
-    magma-cuda92=2.4.0 \
+    magma-cuda92 \
     pytorch=0.4.1 \
     torchvision=0.2.1 \
  && conda clean -ya
